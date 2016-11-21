@@ -92,9 +92,9 @@ Write **tests/specs** first, then implement the functionality.
 ### Exercise
 
 1. Start beginning on this project `npm install` or create a new project and install Jasmine `npm install --save-dev jasmine-node`.
-2. Take a look at http://evanhahn.com/how-do-i-jasmine/ to get familiar with Jasmine.
+2. Take a look at http://evanhahn.com/how-do-i-jasmine/ and https://jasmine.github.io/edge/introduction.html to get familiar with Jasmine.
 3. Create `bank-account.spec.js` and implement the specification.
-4. Run Jasmine:
+4. Run Jasmine (Ignore the thing about the SpecRunner in the tutorial. The SpecRunner is used to run Jasmine on the client but we run it on nodejs):
 	```shell
 	// .../CAS-FEE/HSR.CAS-FEE.Testing/basics $
 	$(npm bin)/jasmine-node --verbose 3-spec/*.spec.js

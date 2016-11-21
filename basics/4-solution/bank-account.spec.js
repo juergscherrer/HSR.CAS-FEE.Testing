@@ -9,6 +9,7 @@ var BankAccount = require("./bank-account");
  */
 
 
+// new bank account test duite
 describe("A new bank account", function() {
 	beforeEach(function() {
 		this.account = new BankAccount();
@@ -29,6 +30,7 @@ describe("A new bank account", function() {
 	});
 });
 
+// 50$ bank account test suite
 describe("A bank account of balace 50", function() {
 	beforeEach(function() {
 		this.account = new BankAccount();
