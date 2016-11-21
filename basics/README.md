@@ -29,6 +29,7 @@
 	// Withdraw 30. Balance 30.
 	// true
 	```
+
 3. Refactoring of the  return statement (make it more readable) -> [bank-account.js](./2-refactoring/bank-account.js):
 	```javascript
 	hasTooLessCredit(amount) {
@@ -37,6 +38,7 @@
 			amount > this.balance * this.maximalWithdrawFactor;
 	}
 	```
+
 4. Reactoring broke the functionality -> [main.js](./2-refactoring/main.js) or:
 	```javascript
 	// .../CAS-FEE/HSR.CAS-FEE.Testing/basics $
@@ -58,12 +60,13 @@
 	// Withdraw 50. Balance -20.
 	// true
 	```
+
 	The compiler will insert a semicolon after `return <-'` (See `empty statement` and `semicolon insertion` in JavaScript).
 
 
 ## How to do it better?
 
--> Write **tests/specs** first, then implement the account!
+Write **tests/specs** first, then implement the functionality.
 
 
 ### User stories of bank account
@@ -79,25 +82,28 @@
 * New account -> balance 0
 * Account balance is 0
 	* -> withdraw impossible
-	* -> deposit 50 -> balance 50
+	* -> deposit 50
+	 	* -> balance 50
 * Account balance is 50
-	* -> maximal withdraw 50 * 25% -> balance 37.5
+	* -> maximal withdraw 50 * 25%
+	 	* -> balance 37.5
 
 
 ### Exercise
 
-1. Install Jasmine `npm install --save-dev jasmine-node`
+1. Start beginning on this project `npm install` or create a new project and install Jasmine `npm install --save-dev jasmine-node`.
 2. Take a look at http://evanhahn.com/how-do-i-jasmine/ to get familiar with Jasmine.
-3. Create `bank-account.spec.js` and write the test specification
+3. Create `bank-account.spec.js` and implement the specification.
 4. Run Jasmine:
 	```shell
 	// .../CAS-FEE/HSR.CAS-FEE.Testing/basics $
 	$(npm bin)/jasmine-node --verbose 3-spec/*.spec.js
 	```
+
 	`$(npm bin)/` allows you to install & use jasmine locally.
 	The usage of global modules (`npm install -g xyz`) is not recommended.
-	Different projects may use different versions of a library.
-5. The tests should not pass!
+	Different projects may need different versions of a library/tool.
+5. The tests should not pass (because we didn't fix the broken return yet)!
 6. Fix the broken return statement
 7. Tests should pass!
 8. How is this development cycle called? -> [solution](./4-solution/bank-account.spec.js)
