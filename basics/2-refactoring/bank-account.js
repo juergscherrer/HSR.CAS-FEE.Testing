@@ -26,6 +26,8 @@ module.exports = class BankAccount {
 	}
 
 	hasTooLessCredit(amount) {
-		return this.balance < Math.abs(amount) || amount > this.balance * this.maximalWithdrawFactor;
+		return
+			this.balance < Math.abs(amount) ||
+			amount > this.balance * this.maximalWithdrawFactor;
 	}
 };
