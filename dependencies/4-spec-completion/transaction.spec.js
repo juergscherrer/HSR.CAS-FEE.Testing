@@ -4,14 +4,17 @@ var BankAccount = require("../bank-account");
 
 describe("A new transaction", function() {
 	beforeEach(function() {
+		// Methodstub for Date.now()
 		spyOn(Date, 'now').andReturn(new Date("2016-11-22T09:49:51.010Z"));
 
-		this.accountA = new BankAccount();
-		this.accountA.balance = 100;
+		// Banc account spy
+		var BankAccountSpy = class {
+			withdraw() {}
+			deposit() {}
+		};
 
-		this.accountB = new BankAccount();
-		this.accountB.balance = 25;
-
+		this.accountA = new BankAccountSpy();
+		this.accountB = new BankAccountSpy();
 		this.transaction = new Transaction(this.accountA, this.accountB, 25);
 	});
 
