@@ -4,8 +4,8 @@ Lern how to test your application with jasmine
 
 ## Chapters
 
-[1. Jasmine basics](./basics/README.md)
-[2. Testing & dependencies](./dependencies/README.md)
+1. [Jasmine basics](./basics/README.md)
+2. [Testing & dependencies](./dependencies/README.md)
 
 
 
