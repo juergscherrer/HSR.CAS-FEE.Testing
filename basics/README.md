@@ -69,24 +69,30 @@
 Write **tests/specs** first, then implement the functionality.
 
 
-### User stories of bank account
+### Stories of a bank account
 
-* As `bank agent` I want to `create accounts` so that I `customers can deposit and withdraw amounts`.
-* As `bank customer` I want to `deposit amounts` so that I can `store my money`.
-* As `bank customer` I want to `withdraw amounts` so that I `get back my stored money`.
-* As `bank` I want to `prevent customers from overdrawing` their account so that I can `lower my risk`.
+* **As a** `bank agent` **I want to** `create accounts` **so that** customers `can deposit and withdraw amounts`.
+* **As a** `bank customer` **I want to** `deposit amounts` **so that** I can `store my money`.
+* **As a** `bank customer` **I want to** `withdraw amounts` **so that** I `get back my stored money`.
+* **As a** `bank` **I want to** `prevent customers from overdrawing` their account **so that** I can `lower my risk`.
 
 
 ### Specification
 
-* New account -> balance 0
-* Account balance is 0
-	* -> withdraw impossible
-	* -> deposit 50
-	 	* -> balance 50
-* Account balance is 50
-	* -> maximal withdraw 50 * 25%
-	 	* -> balance 37.5
+#### Szenario `new account`
+**Given** a `New account`
+* **Then** the balance should be 0
+* **When** the Account balance is 0
+	* **Then** withdraw should be impossible
+	* **And** deposit of 50 is made
+		* **Then** the balance should be 50
+
+#### Szenario `account balance 50`
+**Given** an account with balance 50
+* **When** withdrawed
+	* **Then** the maximal withdraw should be 50 * 25%
+* **When** withdrawed 50 * 25%
+	* **Then** the balance should be 37.5
 
 
 ### Exercise
