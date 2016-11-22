@@ -15,6 +15,83 @@ cd "angular-zoo"
 npm install
 ```
 
+## Enhance console output of the test environment
+```shell
+npm install --save-dev karma-verbose-reporter
+```
+Edit karma.conf.js and add `require('karma-verbose-reporter')`. Don't forget the comma!
+```javascript
+// ...		
+plugins: [
+	require('karma-jasmine'),
+	require('karma-chrome-launcher'),
+	require('karma-remap-istanbul'),
+	require('angular-cli/plugins/karma'),
+	require('karma-verbose-reporter')
+],
+// ...
+```
+Change `reporters: ... 'progress' ...` to `reporters: ... verbose ...`:
+```javascript
+// ...
+reporters: config.angularCli && config.angularCli.codeCoverage
+	? ['verbose', 'karma-remap-istanbul']
+	: ['verbose'],
+port: 9876,
+// ...
+```
+Now you get a detailed output on `ng test`:
+```
+Suites and tests results:
+
+ - AppComponent :
+   * should create the app : ok
+   * should have as title 'app works!' : ok
+   * should render title in a h1 tag : ok
+ - Animal Context :
+   * should create a lion when requested. : ok
+   * should create a panda when requested. : ok
+   * should store created animals. : ok
+ - Animal :
+   * should be alive when newly created. : ok
+   * should have an empty name. : ok
+   * should eat preferred food. : ok
+   * should have eaten available food. : ok
+ - Food Storage :
+   * should contain an initial stock of food. : ok
+   * should contain chicken. : ok
+   * should enlarge the amount of food when ordered. : ok
+   * should throw an error no food is ordered. : ok
+   * should throw an error if uncontained food is ordered. : ok
+ - Lion :
+   * should store its name. : ok
+   * should contain any compatible food. : ok
+   * should be lined (with another animal) if no compatible food is available. : ok
+   * should eat other animal when no compatible food is available. : ok
+ - Panda :
+   * should store its name. : ok
+
+Browser results:
+
+ - Chrome 54.0.2840 (Linux 0.0.0): 20 tests
+   - 20 ok
+```
+
+## Exercise
+
+Check out the [zoo](./src/app/zoo). You have to to create a test for the zoo (see the following spec). 
+To create the tests you must decouple/refactor the architecture first.
+
+### Zoo specification
+
+**Given** a new zoo
+* **Then** it should contain two animals
+* **Then** it should contain a Lion and a Panda
+
+### Solution
+
+[code solution](./src/app/solution/)
+[solution explication](./src/app/solution/README.md)
 
 
 ## Development server
