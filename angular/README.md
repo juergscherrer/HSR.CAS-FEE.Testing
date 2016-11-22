@@ -1,4 +1,4 @@
-# Zoo
+# Zoo - How to deail with service dependencies?
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.20-4.
 
@@ -9,9 +9,11 @@ CLI:
 ```shell
 (sudo) npm uninstall -g angular-cli@1.0.0-beta.20-4
 ```
+The Angular-CLI must be installed globally. It's not possible to install it locally. If you get in troubles, uninstall the CLI, run `npm cache clean`, remove the global `node_modules` directory and try again.
+
 ZOO:
 ```shell
-cd "angular-zoo"
+cd "angular"
 npm install
 ```
 
@@ -31,7 +33,7 @@ plugins: [
 ],
 // ...
 ```
-Change `reporters: ... 'progress' ...` to `reporters: ... verbose ...`:
+Change `reporters: ... 'progress' ...` to `reporters: ... 'verbose' ...`:
 ```javascript
 // ...
 reporters: config.angularCli && config.angularCli.codeCoverage
@@ -79,8 +81,10 @@ Browser results:
 
 ## Exercise
 
-Check out the [zoo](./src/app/zoo). You have to to create a test for the zoo (see the following spec). 
+Check out the [zoo](./src/app/zoo). You have to to create a test for the zoo (see the following spec).
 To create the tests you must decouple/refactor the architecture first.
+
+To run the tests call `ng build` and then `ng test` or directly `ng test`.
 
 ### Zoo specification
 
@@ -90,9 +94,11 @@ To create the tests you must decouple/refactor the architecture first.
 
 ### Solution
 
-[code solution](./src/app/solution/)
-[solution explication](./src/app/solution/README.md)
+* [code solution](./src/app/solution/)
+* [solution explication](./src/app/solution/README.md)
 
+
+# Angular-CLI
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
