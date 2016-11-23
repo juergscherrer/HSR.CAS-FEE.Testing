@@ -2,11 +2,11 @@
 
 Time <!-- Min -->     	| Topic                            	| Link
 ---                   	| ---                              	| ---
-17:15 <!-- 05' -->    	| Introduction                     	|
-17:20 <!-- 30' -->    	| Bank account Story               	| https://github.com/wasabideveloper/HSR.CAS-FEE.Testing/tree/master/basics#what-happens-without-testing
-17:50 <!-- 25' -->    	| *Exercise Jasmine Basics*        	| https://github.com/wasabideveloper/HSR.CAS-FEE.Testing/tree/master/basics#exercise
+17:15 <!-- 10' -->    	| General Intro / Testing intro    	|
+17:25 <!-- 15' -->    	| Bank account Story               	| https://github.com/wasabideveloper/HSR.CAS-FEE.Testing/tree/master/basics#what-happens-without-testing
+17:40 <!-- 25' -->    	| *Exercise Jasmine Basics*        	| https://github.com/wasabideveloper/HSR.CAS-FEE.Testing/tree/master/basics#exercise
+18:05 <!-- 10' -->    	| Discussion solution / TDD        	| https://github.com/wasabideveloper/HSR.CAS-FEE.Testing/tree/master/basics/4-solution
 **18:15** <!-- 15' -->	| **Break**                        	|
-18:30 <!-- 10' -->    	| Discussion solution              	| https://github.com/wasabideveloper/HSR.CAS-FEE.Testing/tree/master/basics/4-solution
 18:40 <!-- 10' -->    	| Testing Introduction             	| CAS-FEE-A16-Testing S5 - 10
 18:50 <!-- 20' -->    	| Test Driven Design Basics        	| CAS-FEE-A16-Testing S11 - 16
 19:10 <!-- 20' -->    	| *Exercise Fake/Spy*              	| https://github.com/wasabideveloper/HSR.CAS-FEE.Testing/tree/master/dependencies#exercise
