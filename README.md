@@ -23,3 +23,10 @@ Lern how to test your application with jasmine
 name="CAS-FEE-A18-Exercises"
 zip -r "$name-Source.zip" "$name" -x *node_modules* -x *~* -x *.idea* -x *.git*
 ```
+
+
+## Print as slide
+
+* Remove width on `<div class="container new-discussion-timeline experiment-repo-nav">`
+* Mark content (schedule or overview)
+* Print settings Firefox: print selection, paper size 339 × 190mm border 0, scaling 70%, print background colors & images, center footer: URL, disable "ignore scaling and fit page width"
