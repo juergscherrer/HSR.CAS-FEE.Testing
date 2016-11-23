@@ -23,7 +23,7 @@ describe("A new bank account", function() {
 });
 
 // 50$ bank account test suite
-describe("A bank account of balace 50", function() {
+describe("A bank account of balance 50", function() {
 	beforeEach(function() {
 		this.account = new BankAccount();
 		this.account.balance = 50;
