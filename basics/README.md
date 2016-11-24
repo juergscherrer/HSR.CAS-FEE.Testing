@@ -64,4 +64,6 @@
 	The compiler will insert a semicolon after `return <-'` (See `empty statement` and `semicolon insertion` in JavaScript).
 
 
-How to do it better? -> [TDD Exercise](./Exercise.md)
+## How to do it better?
+
+[TDD Exercise](./Exercise.md)
