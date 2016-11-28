@@ -20,7 +20,7 @@ describe('A zoo', () => {
 		sut = new Zoo(animalServiceFake);
 	});
 
-	afterEach(() => { // clean up resources
+	afterEach(() => { // clean up resources -> prevent memory leaks
 		sut = void 0;
 	});
 

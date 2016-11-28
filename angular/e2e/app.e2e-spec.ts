@@ -7,8 +7,8 @@ describe('zoo App', function() {
     page = new ZooPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display zoo title', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getTitle()).toEqual('Wild Zoo');
   });
 });
