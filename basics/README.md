@@ -66,4 +66,4 @@
 
 ## How to do it better?
 
-[TDD Exercise](./Exercise.md)
+[TDD Exercise](./Exercise-Jasmine.md)

@@ -82,7 +82,7 @@ Browser results:
 
 ## Exercise
 
-[Angular2 Testing Exercise](./Exercise.md)
+[Angular2 Testing Exercise](./Exercise-Angular2.md)
 
 
 # Angular-CLI

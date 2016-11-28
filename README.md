@@ -7,16 +7,16 @@ Lern how to test your application with jasmine
 ### 1 Jasmine Basics
 
 **🗎** [What happens without testing?](./basics/README.md)  
-**≔** [TDD exercise](./basics/Exercise.md)
+**≔** [TDD exercise](./basics/Exercise-Jasmine.md)
 
 ### 2 Testing & Dependencies
 
-**≔** [Test doubles exercise](./dependencies/Exercise.md)
+**≔** [Test doubles exercise](./dependencies/Exercise-Doubles.md)
 
 ### 3 Angular2 Testing
 
 **🗎** [Angular2 testing setup](./angular/README.md)  
-**≔** [Angular2 testing exercise](./angular/Exercise.md)
+**≔** [Angular2 testing exercise](./angular/Exercise-Angular2.md)
 
 
 ## Lisence
