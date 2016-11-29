@@ -66,4 +66,6 @@
 
 ## How to do it better?
 
-[TDD Exercise](./Exercise-Jasmine.md)
+Test Driven Design: Write **tests/specs** first, then implement the functionality.
+
+-> [TDD exercise](./Exercise-Jasmine.md)

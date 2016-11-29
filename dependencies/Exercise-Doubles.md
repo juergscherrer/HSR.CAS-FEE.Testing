@@ -1,44 +1,51 @@
-# What happens if our component depends on other? - Test Doubles
+# Test doubles exercise - How to decouple SUT-components?
 
 [github.com/wasabideveloper/HSR.CAS-FEE.Testing/tree/master/dependencies](https://github.com/wasabideveloper/HSR.CAS-FEE.Testing/tree/master/dependencies)
 
 
-## User stories of a transaction
+## Transaction user stories
 
 * **As a** `bank customer` **I want to** `send amounts` to other accounts **so that** I can `pay someone`.
 * **As a** `bank customer` **I want to** `receive amounts` from other accounts **so that** someone can `pay me`.
 * **As a** `bank` **I want to** `see time and date of every transaction` **so that** I have an `overview about the transaction history`.
 
 
-## Specification
+## Transaction test scenarios (BDD)
 
-### Szenario `new transaction`
-**Given** a new transaction about 25 of Account A (balance 100) to Account B (balance 25)
-* **Then** the transaction date should be *now*
-* **Then** the transaction amount should be 25
-* **Then** the transaction should not be completed yet
+### Scenario *new transaction*
+**Given** a `new transaction` about 25 of Account A (balance 100) to Account B (balance 25) …
+* … **then** the transaction date should be *now*
+* … **then** the transaction amount should be 25
+* … **then** the transaction should not be completed yet
 
-### Szenario `transaction execution`
-**Given** a new transaction about 25 of Account A (balance 100) to Account B (balance 25)
-* **And** the transaction is executed
-	* **Then** Account A should be withdrawed 25
-	* **Then** Account B should be deposited 25
-	* **Then** the transaction should be completed
+### Scenario *transaction execution*
+**Given** a `new transaction` about 25 of Account A (balance 100) to Account B (balance 25) …
+* … **and** the transaction is executed …
+	* … **then** Account A should be withdrawed 25.
+	* … **then** Account B should be deposited 25.
+	* … **then** the transaction should be completed.
 
 
 ## Exercise
 
-Unit tests should never test multiple components. So we have to use a fake/mock/spy.
+Unit tests should never test multiple components. So we have to use a stub/fake/mock/spy.
 
-1. Write the spec of the first two szenario.
+1. Write the spec of the first scenario.
 	* To compare objects use toEqual() -> toBe() compares the reference
 	* To test the transaction date see the combination of spyOn(Date, 'now') and andReturn() or andCallFake() -> http://evanhahn.com/how-do-i-jasmine/
-2. Tests must fail `$(npm bin)/jasmine-node --verbose 2-spec/*.spec.js`
+2. Tests must fail first on execution `$(npm bin)/jasmine-node --verbose 2-spec/*.spec.js`
 3. Implement the initialization of the Transaction
 4. Tests should pass
-5. Write spec of the transaction execution
+5. Write spec of the second scenario
 	* To test if withdraw() and deposit() have been called checkout spyOn() -> http://evanhahn.com/how-do-i-jasmine/.
-6. Tests must fail
+6. Tests must fail first
 7. Complete transaction implementation
-8. Tests should pass
-9. Why did we not implement all spec and features in one operation? -> [solution](./5-solution/transaction.spec.js).
+8. Tests should pass now
+9. Why did we not implement all spec and features in one operation?
+
+
+## solution
+
+* Spec: [4-spec-completion/transaction.spec.js](./4-spec-completion/transaction.spec.js)
+* Transaction: [5-solution/transaction.js](./5-solution/transaction.js)
+* Question 9: [5-solution/transaction.spec.js](./5-solution/transaction.spec.js)

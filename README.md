@@ -1,5 +1,5 @@
 # HSR.CAS-FEE.Testing
-Lern how to test your application with jasmine
+Lern how to test your applications with Jasmine.
 
 
 ## Chapters
@@ -11,7 +11,7 @@ Lern how to test your application with jasmine
 
 ### 2 Testing & Dependencies
 
-**🗎** [Testing & dependencies](./dependencies/README.md)  
+**🗎** [Testing components depending on other](./dependencies/README.md)  
 **≔** [Test doubles exercise](./dependencies/Exercise-Doubles.md)
 
 ### 3 Angular2 Testing

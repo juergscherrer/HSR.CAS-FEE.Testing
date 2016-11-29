@@ -1,26 +1,25 @@
-# Zoo - How to deail with service dependencies?
+# How to setup a Angular2 project and Angular2 testing?
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.20-4.
 
 
-## Installation
+## Installation of the Angular-CLI
 
-If you didn't install the Angular-CLI globally you can [install and use it locally](./NG-CLI-local-install.md).
+If you didn't install the Angular-CLI globally skip the CLI-installation and use the CLI npm will install locally. [How to install and use Angular-CLI locally](./NG-CLI-local-install.md).
 
-If you already installed the Angular-CLI please install the version 1.0.0-beta.20-4 to prevent version conflicts.
+If you already installed the Angular-CLI please verify you are using the version `1.0.0-beta.20-4` to prevent version conflicts.
 
-CLI:
 ```shell
 (sudo) npm install -g angular-cli@1.0.0-beta.20-4
 ```
 If you get in troubles about the global installation, uninstall the CLI, run `npm cache clean`, remove the global `node_modules` directory and try again.
 
-ZOO:
 ```shell
 cd "angular"
-# if you didn't install the Angular-CLI globally npm will install the proper version locally:
+# Missing a global installation of Angular-CLI npm will install the proper version locally. Otherwise the global will used.
 npm install
 ```
+
 
 ## Enhance console output of the test environment
 ```shell
@@ -47,7 +46,7 @@ reporters: config.angularCli && config.angularCli.codeCoverage
 port: 9876,
 // ...
 ```
-Now you get a detailed output on `ng test`:
+Now you get a detailed output on `$(npm bin)/ng test` / `ng test`:
 ```
 Suites and tests results:
 
@@ -87,7 +86,7 @@ Browser results:
 
 ## Exercise
 
-[Angular2-testing exercise](./Exercise-Angular2.md)
+-> [Angular2-testing exercise](./Exercise-Angular2.md)
 
 
 # Angular-CLI

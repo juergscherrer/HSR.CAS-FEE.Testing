@@ -1,7 +1,12 @@
-# Testing & Dependencies
+# How to test components depending on other?
+
+## Project 1 architecture
 
 ![Projekt 1 architektur](./project1-architecture.jpg)
 [⇱ project1-architecture.jpg](./project1-architecture.jpg)
+
+
+## SPA architecture
 
 ![SPA architecture](./pattern-spa.jpg)
 [⇱ pattern-spa.jpg](./pattern-spa.jpg)
@@ -13,6 +18,8 @@
 * How to test a controller depending on a service?
 
 
-## Exercise
+## How to decouple SUT-components?
 
-[Test doubles exercise](./Exercise-Doubles.md)
+Test doubles: Replace dependencies by test-components.
+
+-> [Test doubles exercise](./Exercise-Doubles.md)
