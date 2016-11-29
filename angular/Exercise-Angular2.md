@@ -1,6 +1,9 @@
 # Angular2 Testing Exercise
 
-1. Check out the [zoo](./src/app/zoo).
+[github.com/wasabideveloper/HSR.CAS-FEE.Testing/tree/master/angular](https://github.com/wasabideveloper/HSR.CAS-FEE.Testing/tree/master/angular)
+
+
+1. Check out the [zoo](./src/app/zoo). [Install see README](./README.md).
 2. Take a look at [angular.io/docs/ts/latest/testing#!#introduction-to-the-angular-testing-utilities](https://angular.io/docs/ts/latest/testing#!#introduction-to-the-angular-testing-utilities)
 3. To test the zoo you must decouple/refactor the architecture first.
 4. Create a test for the zoo (see the following spec).
@@ -37,7 +40,8 @@ Our zoo application renders a simple list of the containing animals:
 <hr>
 
 1. Take a look at the E2E test in `e2e/app.e2e-spec.ts`.
-2. Extend the test to check if there are a lion and a panda named "lion" and "Kung Fu Panda" displayed in the UI.
+2. Extend the test to check if there are a lion and a panda named "lion" and "Kung Fu Panda" displayed in the UI. -> [Protractor Documentation](http://www.protractortest.org/#/api).  
+   -> To run the E2E test run the application `ng serve` and run the E2E tests `ng e2e`.
 3. What is the main case for E2E tests? Should you test everything with E2E tests?
 
 ### Solution

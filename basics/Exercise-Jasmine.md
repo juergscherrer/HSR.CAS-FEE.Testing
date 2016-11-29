@@ -1,6 +1,8 @@
 # How to do it better? - TDD
 
-Write **tests/specs** first, then implement the functionality.
+[github.com/wasabideveloper/HSR.CAS-FEE.Testing/tree/master/basics](https://github.com/wasabideveloper/HSR.CAS-FEE.Testing/tree/master/basics)
+
+Test Driven Design: Write **tests/specs** first, then implement the functionality.
 
 
 ## Stories of a bank account
