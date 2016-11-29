@@ -5,15 +5,20 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 
 ## Installation
 
+If you didn't install the Angular-CLI globally you can [install and use it locally](./NG-CLI-local-install.md).
+
+If you already installed the Angular-CLI please install the version 1.0.0-beta.20-4 to prevent version conflicts.
+
 CLI:
 ```shell
-(sudo) npm uninstall -g angular-cli@1.0.0-beta.20-4
+(sudo) npm install -g angular-cli@1.0.0-beta.20-4
 ```
-The Angular-CLI must be installed globally. It's not possible to install it locally. If you get in troubles, uninstall the CLI, run `npm cache clean`, remove the global `node_modules` directory and try again.
+If you get in troubles about the global installation, uninstall the CLI, run `npm cache clean`, remove the global `node_modules` directory and try again.
 
 ZOO:
 ```shell
 cd "angular"
+# if you didn't install the Angular-CLI globally npm will install the proper version locally:
 npm install
 ```
 
