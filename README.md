@@ -31,8 +31,9 @@ Lern how to test your applications with Jasmine.
 ## Compress source
 
 ```shell
-name="CAS-FEE-A18-Exercises"
-zip -r "$name-Source.zip" "$name" -x *node_modules* -x *~* -x *.idea* -x *.git*
+source="HSR.CAS-FEE.Testing"
+name="CAS-FEE-A13-Exercises"
+zip -r "$name.zip" "$source" -x *node_modules* -x *~* -x *.idea* -x *.git*
 ```
 
 
