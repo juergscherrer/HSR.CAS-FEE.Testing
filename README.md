@@ -11,6 +11,7 @@ Lern how to test your application with jasmine
 
 ### 2 Testing & Dependencies
 
+**🗎** [Testing & dependencies](./dependencies/README.md)  
 **≔** [Test doubles exercise](./dependencies/Exercise-Doubles.md)
 
 ### 3 Angular2 Testing

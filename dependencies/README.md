@@ -15,4 +15,4 @@
 
 ## Exercise
 
-[Test doubles exercise](./dependencies/Exercise-Doubles.md)
+[Test doubles exercise](./Exercise-Doubles.md)
