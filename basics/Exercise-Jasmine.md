@@ -38,9 +38,11 @@
 3. Create `bank-account.spec.js` and implement the specification.
 4. Run Jasmine (Ignore the section about the `SpecRunner` in the tutorial. The SpecRunner is used to run Jasmine on the client but we run it on nodejs):
 	```shell
+	# linux & mac using a shell like bash
 	# .../CAS-FEE/HSR.CAS-FEE.Testing/basics $
 	$(npm bin)/jasmine-node --verbose 3-spec/*.spec.js
 	```
+	On windows use the power shell and use the substitution mechanism of the powershell instead of `$(npm bin)` and `*.spec.js` or use the full path `../node_modules/.bin/jasmine-node --verbose 3-spec/bank-account.spec.js`.
 
 	`$(npm bin)/` allows you to install & use jasmine locally.
 	The usage of global modules (`npm install -g xyz`) is not recommended.
@@ -50,6 +52,8 @@
 	```shell
 	# .../CAS-FEE/HSR.CAS-FEE.Testing/basics $
 	npm run jasmine --verbose 3-spec/*.spec.js
+	# or
+	npm run jasmine --verbose 3-spec/bank-account.spec.js
 	```
 5. The tests should not all pass (because we didn't fix the broken return yet)!
 6. Fix the broken return statement

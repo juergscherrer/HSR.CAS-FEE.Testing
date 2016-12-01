@@ -4,6 +4,7 @@
   "description": "Lern how to test your application with jasmine",
   "main": "index.js",
   "scripts": {
+  	"jasmine": "jasmine-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
