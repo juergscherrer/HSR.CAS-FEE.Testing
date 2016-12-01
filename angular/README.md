@@ -17,7 +17,7 @@ If you get in troubles about the global installation, uninstall the CLI, run `np
 ```shell
 cd "angular"
 # Missing a global installation of Angular-CLI npm will install the proper version locally.
-# Otherwise the global will used.
+# Otherwise the global will be used.
 npm install
 ```
 
