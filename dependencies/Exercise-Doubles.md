@@ -33,7 +33,18 @@ Unit tests should never test multiple components. So we have to use a stub/fake/
 1. Write the spec of the first scenario.
 	* To compare objects use toEqual() -> toBe() compares the reference
 	* To test the transaction date see the combination of spyOn(Date, 'now') and andReturn() or andCallFake() -> http://evanhahn.com/how-do-i-jasmine/
-2. Tests must fail first on execution `$(npm bin)/jasmine-node --verbose 2-spec/*.spec.js`
+2. Tests must fail first on execution
+	```shell
+	# bash
+	$(npm bin)/jasmine-node --verbose 2-spec/*.spec.js
+	# or (windows standard shell)
+	../node_modules/.bin/jasmine-node --verbose 2-spec/transaction.spec.js
+	# or using npm script (bash)
+	npm run jasmine-node --verbose 2-spec/*.spec.js
+	# or using npm script (windows standard shell)
+	npm run jasmine-node --verbose 2-spec/transaction.spec.js
+	```
+	If your shell does not support whildcard expansion like `2-spec/*.spec.js` use the full path `2-spec/transaction.spec.js`.
 3. Implement the initialization of the Transaction
 4. Tests should pass
 5. Write spec of the second scenario

@@ -38,23 +38,27 @@
 3. Create `bank-account.spec.js` and implement the specification.
 4. Run Jasmine (Ignore the section about the `SpecRunner` in the tutorial. The SpecRunner is used to run Jasmine on the client but we run it on nodejs):
 	```shell
-	# linux & mac using a shell like bash
 	# .../CAS-FEE/HSR.CAS-FEE.Testing/basics $
-	$(npm bin)/jasmine-node --verbose 3-spec/*.spec.js
-	```
-	On windows use the power shell and use the substitution mechanism of the powershell instead of `$(npm bin)` and `*.spec.js` or use the full path `../node_modules/.bin/jasmine-node --verbose 3-spec/bank-account.spec.js`.
 
+	# (bash alike shell)
+	$(npm bin)/jasmine-node --verbose 3-spec/*.spec.js
+	# or (windows standard shell)
+	../node_modules/.bin/jasmine-node --verbose 3-spec/bank-account.spec.js
+	# or (npm script & bash)
+	npm run jasmine --verbose 3-spec/*.spec.js
+	# or (npm script & windows standard shell)
+	npm run jasmine --verbose 3-spec/bank-account.spec.js
+
+	```
 	`$(npm bin)/` allows you to install & use jasmine locally.
 	The usage of global modules (`npm install -g xyz`) is not recommended.
 	Different projects may use different versions of a library/tool.
 
-	If you don't like `$(npm bin)/` you can create the entry '"jasmine": "jasmine-node"' in the section `scripts` of your `package.json` and run it using `npm run`:
-	```shell
-	# .../CAS-FEE/HSR.CAS-FEE.Testing/basics $
-	npm run jasmine --verbose 3-spec/*.spec.js
-	# or
-	npm run jasmine --verbose 3-spec/bank-account.spec.js
-	```
+	On windows use the power shell and use the substitution mechanism of the powershell instead of `$(npm bin)` and `*.spec.js` or use the full path `../node_modules/.bin/jasmine-node --verbose 3-spec/bank-account.spec.js`.
+
+	To learn more about locally installed modules and how to use it see [../Local-npm-modules](../Local-npm-modules.md).
+
+	If you don't like `$(npm bin)/` create the entry '"jasmine": "jasmine-node"' in the section `scripts` of your `package.json` and run it using npm scripts: `npm run jasmine --verbose 3-spec/*.spec.js`.
 5. The tests should not all pass (because we didn't fix the broken return yet)!
 6. Fix the broken return statement
 7. Tests should pass!
@@ -66,3 +70,25 @@
 * Spec: [3-spec/bank-account.spec.js](./3-spec/bank-account.spec.js)
 * Banc account fix: [4-solution/bank-account.js](./4-solution/bank-account.js)
 * Question 8: [4-solution/bank-account.spec.js](./4-solution/bank-account.spec.js)
+
+### process.env.bankaccount
+
+In the solution you will find the following import construct. You can ignore it. It's only used for the exercise.
+
+```javascript
+var BankAccount = require(process.env.bankaccount || "./bank-account");
+```
+```javascript
+process.env.bankaccount = "../4-solution/bank-account";
+var Spec = require("../3-spec/bank-account.spec");
+```
+It's used to keep the solution clean of duplicated code by importing the file declared in the process environment variable `process.env.bankaccount`.
+
+In wild life you will work with normal imports like:
+
+```javascript
+var BankAccount = require("./bank-account");
+```
+```javascript
+var Spec = require("../3-spec/bank-account.spec");
+```

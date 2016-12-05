@@ -18,11 +18,11 @@ npm will install it locally so you can use it locally:
 cd 'ANGULAR-PROJECT'
 npm install
 
+# (bash)
 $(npm bin)/ng serve
-# or
+# or (windows standard shell)
 node_modules/.bin/ng serve
-# or
-# add '"ng": "ng"' to the scripts in package.json and use npm run:
+# or add the script '"ng": "ng"' to the scripts in package.json and use npm run:
 npm run ng serve
 ```
 
@@ -48,7 +48,13 @@ This will create `MyHugeProject/node_modules/angular-cli`.
 To create a new project:
 
 ```shell
+# (bash)
 $(npm bin)/ng new 'SPA-ANGULAR'
+# or (windows standard shell)
+node_modules/.bin/ng new 'SPA-ANGULAR'
+# or (npm script)
+npm run ng new 'SPA-ANGULAR'
+
 ```
 Angular-CLI will call `npm install`. NPM will install the cli locally because there is no global CLI.
 
@@ -61,10 +67,10 @@ Now you are able to use the CLI locally:
 ```shell
 cd 'SPA-ANGULAR'
 
+# (bash)
 $(npm bin)/ng serve
-# or
+# or (windows standard shell)
 node_modules/.bin/ng serve
-# or
-# add '"ng": "ng"' to the scripts in package.json and use npm run:
+# or (npm script)
 npm run ng serve
 ```
