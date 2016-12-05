@@ -1,5 +1,4 @@
 var Transaction = require(process.env.transaction || "./transaction");
-var BankAccount = require("../bank-account");
 
 
 describe("A new transaction", function() {

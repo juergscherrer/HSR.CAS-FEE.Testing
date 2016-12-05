@@ -32,6 +32,13 @@ Lern how to test your applications with Jasmine.
 
 ```shell
 source="HSR.CAS-FEE.Testing"
+name="HSR.CAS-FEE.Testing"
+zip -r "$name-Source.zip" "$name" -x *node_modules* -x *~* -x *.idea*
+
+## Compress deployment source
+
+```shell
+source="HSR.CAS-FEE.Testing"
 name="CAS-FEE-A13-Exercises"
 zip -r "$name.zip" "$source" -x *node_modules* -x *~* -x *.idea* -x *.git*
 ```
