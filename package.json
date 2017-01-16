@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wasabideveloper/HSR.CAS-FEE.Testing.git"
+    "url": "git+https://github.com/IFS-Web/HSR.CAS-FEE.Testing.git"
   },
   "author": "HSR Hochschule für Technik Rapperswil, T. Blaser",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/wasabideveloper/HSR.CAS-FEE.Testing/issues"
+    "url": "https://github.com/IFS-Web/HSR.CAS-FEE.Testing/issues"
   },
-  "homepage": "https://github.com/wasabideveloper/HSR.CAS-FEE.Testing#readme",
+  "homepage": "https://github.com/IFS-Web/HSR.CAS-FEE.Testing#readme",
   "dependencies": {},
   "devDependencies": {
     "jasmine-node": "^1.14.5"
