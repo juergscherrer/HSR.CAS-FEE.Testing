@@ -14,11 +14,6 @@ Lern how to test your applications with Jasmine.
 **🗎** [Testing components depending on other](./dependencies/README.md)  
 **≔** [Test doubles exercise](./dependencies/Exercise-Doubles.md)
 
-### 3 Angular2 Testing
-
-**🗎** [Angular2 testing setup](./angular/README.md)  
-**≔** [Angular2 testing exercise](./angular/Exercise-Angular2.md)
-
 
 ## Lisence
 
