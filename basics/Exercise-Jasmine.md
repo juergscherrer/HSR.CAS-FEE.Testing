@@ -1,6 +1,6 @@
 # TDD exercise - How to enhance software quality by process?
 
-[github.com/wasabideveloper/HSR.CAS-FEE.Testing/tree/master/basics](https://github.com/wasabideveloper/HSR.CAS-FEE.Testing/tree/master/basics)
+[github.com/IFS-Web/HSR.CAS-FEE.Testing/tree/master/basics](https://github.com/IFS-Web/HSR.CAS-FEE.Testing/tree/master/basics)
 
 
 ## Banc account user stories
@@ -56,9 +56,9 @@
 
 	On windows use the power shell and use the substitution mechanism of the powershell instead of `$(npm bin)` and `*.spec.js` or use the full path `../node_modules/.bin/jasmine-node --verbose 3-spec/bank-account.spec.js`.
 
-	To learn more about locally installed modules and how to use it see [../Local-npm-modules](../Local-npm-modules.md).
+	* Optional: To learn more about locally installed modules and how to use it see [../Local-npm-modules](../Local-npm-modules.md).
 
-	If you don't like `$(npm bin)/` create the entry '"jasmine": "jasmine-node"' in the section `scripts` of your `package.json` and run it using npm scripts: `npm run jasmine --verbose 3-spec/*.spec.js`.
+		If you don't like `$(npm bin)/` create the entry '"jasmine": "jasmine-node"' in the section `scripts` of your `package.json` and run it using npm scripts: `npm run jasmine --verbose 3-spec/*.spec.js`.
 5. The tests should not all pass (because we didn't fix the broken return yet)!
 6. Fix the broken return statement
 7. Tests should pass!
