@@ -1,6 +1,6 @@
 # Test doubles exercise - How to decouple SUT-components?
 
-[github.com/wasabideveloper/HSR.CAS-FEE.Testing/tree/master/dependencies](https://github.com/wasabideveloper/HSR.CAS-FEE.Testing/tree/master/dependencies)
+[github.com/IFS-Web/HSR.CAS-FEE.Testing/tree/master/dependencies](https://github.com/IFS-Web/HSR.CAS-FEE.Testing/tree/master/dependencies)
 
 
 ## Transaction user stories
@@ -28,7 +28,7 @@
 
 ## Exercise
 
-Unit tests should never test multiple components. So we have to use a stub/fake/mock/spy.
+Unit tests should never test multiple/external (depended-on) components. So we have to introduce Test Doubles to decouple such kind of dependencies.
 
 1. Write the spec of the first scenario.
 	* To compare objects use toEqual() -> toBe() compares the reference
