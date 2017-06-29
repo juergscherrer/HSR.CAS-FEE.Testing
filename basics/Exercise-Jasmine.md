@@ -31,19 +31,20 @@
 
 ## Exercise
 
-1. Start using this project installing the dependencies `npm install` or create a new project and install Jasmine `npm install --save-dev jasmine-node`.
-2. Take a look at the following links to get familiar with Jasmine:
+1. Download or fork the whole code repository from [github.com/IFS-Web/HSR.CAS-FEE.Testing](https://github.com/IFS-Web/HSR.CAS-FEE.Testing) to your local hard drive.
+2. Start using the downloaded project by installing the dependencies `npm install` (in the projects root directory) or create a new project and install Jasmine `npm install --save-dev jasmine-node`.
+3. Take a look at the following links to get familiar with Jasmine:
 	* http://evanhahn.com/how-do-i-jasmine/
 	* https://jasmine.github.io/edge/introduction.html
-3. Create `bank-account.spec.js` and implement the specification.
-4. Run Jasmine (Ignore the section about the `SpecRunner` in the tutorial. The SpecRunner is used to run Jasmine on the client but we run it on nodejs):
+4. Open `basics/3-spec/bank-account.spec.js` and revise the specification against the implemented code.
+5. Run Jasmine (ignore the section about the `SpecRunner` in the tutorial. The SpecRunner is used to run Jasmine on the client but we run it on nodejs):
 	```shell
 	# .../CAS-FEE/HSR.CAS-FEE.Testing/basics $
 
-	# (bash alike shell)
+	# (unix/macos bash alike shell)
 	$(npm bin)/jasmine-node --verbose 3-spec/*.spec.js
 	# or (windows standard shell)
-	../node_modules/.bin/jasmine-node --verbose 3-spec/bank-account.spec.js
+	..\node_modules\.bin\jasmine-node --verbose 3-spec/bank-account.spec.js
 	# or (npm script & bash)
 	npm run jasmine --verbose 3-spec/*.spec.js
 	# or (npm script & windows standard shell)
@@ -54,15 +55,10 @@
 	The usage of global modules (`npm install -g xyz`) is not recommended.
 	Different projects may use different versions of a library/tool.
 
-	On windows use the power shell and use the substitution mechanism of the powershell instead of `$(npm bin)` and `*.spec.js` or use the full path `../node_modules/.bin/jasmine-node --verbose 3-spec/bank-account.spec.js`.
-
-	* Optional: To learn more about locally installed modules and how to use it see [../Local-npm-modules](../Local-npm-modules.md).
-
-		If you don't like `$(npm bin)/` create the entry '"jasmine": "jasmine-node"' in the section `scripts` of your `package.json` and run it using npm scripts: `npm run jasmine --verbose 3-spec/*.spec.js`.
-5. The tests should not all pass (because we didn't fix the broken return yet)!
-6. Fix the broken return statement
-7. Tests should pass!
-8. How is this development cycle called?
+6. The tests should not all pass (because we didn't fix the broken return yet)!
+7. Fix the broken return statement.
+8. Tests should pass!
+9. How is this development cycle called?
 
 
 ## Solution
