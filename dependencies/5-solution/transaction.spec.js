@@ -6,7 +6,7 @@ var Spec = require("../4-spec-completion/transaction.spec");
  * We develop iteratively. So we
  * 1. create the spec
  * 2. check if tests are failing
- * 3. implement the fature
+ * 3. implement the feature
  * 4. check if the tests are passing
  * 5. Do the whole iteration for the next SMALL feature
  *
