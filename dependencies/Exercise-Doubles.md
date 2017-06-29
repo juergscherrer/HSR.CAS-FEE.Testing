@@ -30,28 +30,28 @@
 
 Unit tests should never test multiple/external (depended-on) components. So we have to introduce Test Doubles to decouple such kind of dependencies.
 
-1. Write the spec of the first scenario.
+1. Write the spec of the first scenario. Start by editing the files in `dependencies\1-initial`.
 	* To compare objects use toEqual() -> toBe() compares the reference
 	* To test the transaction date see the combination of spyOn(Date, 'now') and andReturn() or andCallFake() -> http://evanhahn.com/how-do-i-jasmine/
-2. Tests must fail first on execution
+2. Tests must fail first on execution. For the following exercises, you will find the solutions in the corresponding sub folders, e.g. `dependencies\2-spec`.
 	```shell
 	# bash
 	$(npm bin)/jasmine-node --verbose 2-spec/*.spec.js
 	# or (windows standard shell)
-	../node_modules/.bin/jasmine-node --verbose 2-spec/transaction.spec.js
+	..\node_modules\.bin\jasmine-node --verbose 2-spec/transaction.spec.js
 	# or using npm script (bash)
-	npm run jasmine-node --verbose 2-spec/*.spec.js
+	npm run jasmine --verbose 2-spec/*.spec.js
 	# or using npm script (windows standard shell)
-	npm run jasmine-node --verbose 2-spec/transaction.spec.js
+	npm run jasmine --verbose 2-spec/transaction.spec.js
 	```
 	If your shell does not support whildcard expansion like `2-spec/*.spec.js` use the full path `2-spec/transaction.spec.js`.
-3. Implement the initialization of the Transaction
-4. Tests should pass
-5. Write spec of the second scenario
+3. Implement the initialization of the Transaction.
+4. Tests should pass.
+5. Write spec of the second scenario.
 	* To test if withdraw() and deposit() have been called checkout spyOn() -> http://evanhahn.com/how-do-i-jasmine/.
-6. Tests must fail first
-7. Complete transaction implementation
-8. Tests should pass now
+6. Tests must fail first.
+7. Complete transaction implementation.
+8. Tests should pass now.
 9. Why did we not implement all spec and features in one operation?
 
 
