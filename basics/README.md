@@ -1,4 +1,4 @@
-# TDD exercise - How to enhance software quality by process?
+# Test First exercise - How to enhance software quality by process?
 
 [github.com/IFS-Web/HSR.CAS-FEE.Testing/tree/master/basics](https://github.com/IFS-Web/HSR.CAS-FEE.Testing/tree/master/basics)
 
