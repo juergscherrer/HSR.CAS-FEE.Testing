@@ -29,7 +29,7 @@
 Komponenten, welche von externenen, langsamen oder nicht immer verfügbare Ressourcen (Netzwerk, Datenbanken, usw.) abhängen (so genannte depended-on component [DoC]), sollten in Unit Tests vermieden werden. Somit bleiben die Unit Tests schnell und testen die effektive Logik des Programms. Test Doubles (fakes/spies/mocks/...) werden anstatt der DoCs eingeführt, um Abhängigkeiten zu externen Komponenten zu vermeiden. Im Szenario oben entspricht der BankAccount A und B solch einem externen DoC-System.
 
 1. Schreiben Sie die Test-Spezifikationen (Jasmine Tests) fürs Szenario ```A new transaction of 25$ (account A 100$ / account B 25$)```. Sie finden die Vorlagen im Ordner `dependencies\1-initial`.
-	* Um Werte/Referenzen zu überprüfen, verwenden Sie ```toBe()```; ```toEqual()``` vergleicht ebenfalls die Inhalte von Objekt-Referenzen (Properties/Indexes).
+	* Um Werte/Referenzen zu überprüfen, verwenden Sie ```toBe()```; ```toEqual()``` vergleicht zusätzlich die Inhalte von Objekten und Arrays (Properties/Indexes).
 	* Um native APIs, welche immer andere Resultate liefern, testbar zu machen, kann die Jasmine-Funktion ```spyOn(Date, 'now')``` und ```andReturn()``` / ```andCallFake()``` verwendet werden. Mehr Informationen zu diesen Funktionen finden Sie unter http://evanhahn.com/how-do-i-jasmine/.
 	* Legen Sie eine Fake-Klasse für das DoC ```BankAccount``` an. Verwengeben Sie dieselbe API (withdraw/deposit) wie in den Basics-Aufgaben.
 	* Die Lösungen zur Aufgabe 1 finden Sie unter ```2-spec/transaction.spec.js```.
