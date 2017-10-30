@@ -45,7 +45,7 @@ Komponenten, welche von externenen, langsamen oder nicht immer verfügbare Resso
 		* Im die ```withdraw()``` der Funktion der ```BankAccountFake```-Klasse zu überschreiben, können Sie ebenfalls die Jasmine-Funktion ```spyOn()``` verwenden.
 	* Nun sollte der Test ohne Fehler durchlaufen.
 6. Implementieren Sie nun die weiteren Anforderungen des Szenarios ```when executed``` analog der Vorgehensweise unter Punkt 5. 
-7. Warum implementieren wir nicht alle Test-Spezifikationen und anschliessend sämtliche Transaction-Logik unter einem Aufwisch (vgl. Vorgehen Punkt 1 mit Punkt 5)?
+7. Vergleichen Sie das Vorgehen von Punkt 1 mit Punkt 5: Warum macht es keinen Sinn, zuerst sämtliche Test-Spezifikationen und erst anschliessend die gesamte Transaction-Logik zu implementieren?
 
 
 ## Solution
