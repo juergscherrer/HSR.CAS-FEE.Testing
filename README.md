@@ -6,7 +6,7 @@ Lern how to test your applications with Jasmine.
 
 ### 1 Jasmine Basics
 
-* [TDD exercise](./basics/README.md)
+* [Test First exercise](./basics/README.md)
 
 ### 2 Testing & Dependencies
 
@@ -17,5 +17,5 @@ Lern how to test your applications with Jasmine.
 
 | Document | License |
 | --- | --- |
-| Exercises | <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />by <a xmlns:cc="http://creativecommons.org/ns#" href="www.ifs.hsr.ch" property="cc:attributionName" rel="cc:attributionURL"> IFS, HSR Hochschule für Technik, Rapperswil</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. |
+| Exercises | <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />by <a xmlns:cc="http://creativecommons.org/ns#" href="www.ifs.hsr.ch" property="cc:attributionName" rel="cc:attributionURL"> IFS, HSR Hochschule fÃ¼r Technik, Rapperswil</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. |
 | Code examples | The code examples are licensed under [The MIT License (MIT)](./LICENSE). |
