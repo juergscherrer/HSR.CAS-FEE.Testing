@@ -1,7 +1,7 @@
-var BankAccount = require("./bank-account.js");
+const BankAccount = require("./bank-account.js");
 
 
-var account = new BankAccount();
+const account = new BankAccount();
 
 account.deposit(50);
 

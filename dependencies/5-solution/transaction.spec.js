@@ -1,6 +1,6 @@
 process.env.transaction = "../5-solution/transaction";
 
-var Spec = require("../4-spec-completion/transaction.spec");
+const Spec = require("../4-spec-completion/transaction.spec");
 
 /**
  * We develop iteratively. So we

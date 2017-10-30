@@ -1,19 +1,19 @@
-var Transaction = require(process.env.transaction || "./transaction");
+const Transaction = require(process.env.transaction || "./transaction");
 
 
-describe("A new transaction", function() {
+describe("A new transaction of 25$", function() {
 	beforeEach(function() {
 		// Methodstub for Date.now()
 		spyOn(Date, 'now').andReturn(new Date("2016-11-22T09:49:51.010Z"));
 
-		// Banc account spy
-		var BankAccountSpy = class {
+		// Banc account fake
+		const BankAccountFake = class {
 			withdraw() {}
 			deposit() {}
 		};
 
-		this.accountA = new BankAccountSpy();
-		this.accountB = new BankAccountSpy();
+		this.accountA = new BankAccountFake();
+		this.accountB = new BankAccountFake();
 		this.transaction = new Transaction(this.accountA, this.accountB, 25);
 	});
 
@@ -21,7 +21,7 @@ describe("A new transaction", function() {
 		expect(this.transaction.date).toEqual(new Date("2016-11-22T09:49:51.010Z"));
 	});
 
-	it("has an amount of 25", function() {
+	it("has an amount of 25$", function() {
 		expect(this.transaction.amount).toBe(25);
 	});
 

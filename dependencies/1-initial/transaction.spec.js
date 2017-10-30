@@ -1,6 +1,6 @@
-var Transaction = require(process.env.transaction || "./transaction");
+const Transaction = require(process.env.transaction || "./transaction");
 
 
-describe("A new transaction", function() {
+describe("A new transaction of 25$", function() {
 
 });
