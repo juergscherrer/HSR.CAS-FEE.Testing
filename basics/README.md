@@ -44,8 +44,8 @@
 
 Falls noch Zeit übrig bleibt:
 10. Erweitern Sie die Tests um den folgenden Testfall:
-    **describe**… "A bank account of balance larger than 0"
-    * it … "should return true when withdraw succeeded"
+	**describe**… "A bank account of balance larger than 0"
+	* it … "should return true when withdraw succeeded"
 11. Fügen Sie im bank-account.spec.js den entsprechenden Code dazu.
 
 
@@ -66,4 +66,4 @@ process.env.bankaccount = "../4-solution/bank-account";
 const Spec = require("../3-spec/bank-account.spec");
 ```
 
-Bitte verwenden Sie in Ihrem Projekt die gewohnten Import-Statements.
+Bitte verwenden Sie in Ihren Real Live-Projekten die gewohnten Import-Statements.
