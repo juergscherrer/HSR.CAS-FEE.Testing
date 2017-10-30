@@ -13,7 +13,7 @@ const BankAccount = require("./bank-account");
  */
  
  // 100$ bank account test suite
-describe("A bank account of with balance of 100", function() {
+describe("A bank account of with balance of 100$", function() {
 	beforeEach(function() {
 		this.account = new BankAccount();
 		this.account.balance = 100;

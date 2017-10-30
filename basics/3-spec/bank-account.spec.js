@@ -24,7 +24,7 @@ describe("A new bank account", function() {
 });
 
 // bank account test suite with amount larger than 0$ (e.g. 50$)
-describe("A bank account of balance larger than 0 (50$)", function() {
+describe("A bank account of balance larger than 0$ (amount of 50$)", function() {
 	beforeEach(function() {
 		this.account = new BankAccount();
 		this.account.balance = 50;

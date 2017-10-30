@@ -3,7 +3,7 @@ process.env.transaction = "../5-solution/transaction";
 const Spec = require("../4-spec-completion/transaction.spec");
 
 /**
- * We develop iteratively. So we
+ * We develop iteratively, in small steps to isolate failures. So we
  * 1. create the spec
  * 2. check if tests are failing
  * 3. implement the feature
