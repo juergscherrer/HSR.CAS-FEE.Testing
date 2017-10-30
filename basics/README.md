@@ -19,7 +19,7 @@
 * it … "should not allow a withdraw without balance"
 * it … "should have a balance of 50$ after a deposit of 50$"
  
-**describe**… "A bank account of balance larger than 0$ (50$)"
+**describe**… "A bank account of balance larger than 0$ (amount of 50$)"
 * it … "should not allow to withdraw amounts larger than 25% [50$ => 13$ (26%)]"
 * it … "should allow to withdraw amounts lower than 25% [50$ => 12.5$ (25%)]"
 
@@ -45,7 +45,7 @@
 	**Falls noch Zeit übrig bleibt:**
 10. Erweitern Sie die Tests um den folgenden Testfall:
 
-	**describe**… "A bank account of balance larger than 0"
+	**describe**… "A bank account of with balance of 100$"
 	* it … "should return true when withdraw succeeded"
 11. Fügen Sie im ```bank-account.spec.js``` den entsprechenden Code dazu.
 
