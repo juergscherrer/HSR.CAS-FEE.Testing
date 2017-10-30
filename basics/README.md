@@ -42,11 +42,11 @@
 8. Die Tests sollten nun grün durchlaufen!
 9. Wie wird dieser "development cycle" genannt?
 
-Falls noch Zeit übrig bleibt:
+	**Falls noch Zeit übrig bleibt:**
 10. Erweitern Sie die Tests um den folgenden Testfall:
 	**describe**… "A bank account of balance larger than 0"
 	* it … "should return true when withdraw succeeded"
-11. Fügen Sie im bank-account.spec.js den entsprechenden Code dazu.
+11. Fügen Sie im ```bank-account.spec.js``` den entsprechenden Code dazu.
 
 
 ## Solution
