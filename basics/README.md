@@ -44,6 +44,7 @@
 
 	**Falls noch Zeit übrig bleibt:**
 10. Erweitern Sie die Tests um den folgenden Testfall:
+
 	**describe**… "A bank account of balance larger than 0"
 	* it … "should return true when withdraw succeeded"
 11. Fügen Sie im ```bank-account.spec.js``` den entsprechenden Code dazu.
@@ -56,7 +57,7 @@
 
 ### process.env.bankaccount
 
-Die Lösungen enthalten in den Import-Anweisungen ```process.env.bankaccount``` Statements. Diese sind für die Lösungen gedacht, damit die Sourcen nicht in sämtliche Folders kopiert werden müssen.
+Die Vorlagen enthalten in den Import-Anweisungen ```process.env.bankaccount``` Statements. Diese sind für die Lösungen gedacht, damit die Sourcen nicht in sämtliche Folders kopiert werden müssen.
 
 ```javascript
 const BankAccount = require(process.env.bankaccount || "./bank-account");
