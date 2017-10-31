@@ -43,7 +43,7 @@ Komponenten, welche von externen, langsamen oder nicht immer verfügbare Ressour
 4. Nun sollten die Tests aus der Aufgabe 1 ohne Fehler durchlaufen.
 5. Schreiben Sie nun den ersten Test für das zeite (verschachtelte) Szenario ```when executed```.
 	* Der Test muss nun fehlschlagen.
-	* Implementieren Sie nun die ```complete()```-Funktion der Transaction-Klasse:
+	* Implementieren Sie nun die ```execute()```-Funktion der Transaction-Klasse:
 		* Um die ```withdraw()``` der Funktion der ```BankAccountFake```-Klasse zu überschreiben, können Sie ebenfalls die Jasmine-Funktion ```spyOn()``` verwenden.
 	* Nun sollte der Test ohne Fehler durchlaufen.
 6. Implementieren Sie nun die weiteren Anforderungen des Szenarios ```when executed``` analog der Vorgehensweise unter Punkt 5. 
