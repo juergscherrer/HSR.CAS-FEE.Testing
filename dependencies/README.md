@@ -26,23 +26,25 @@
 
 ## Exercise
 
-Komponenten, welche von externenen, langsamen oder nicht immer verfügbare Ressourcen (Netzwerk, Datenbanken, usw.) abhängen (so genannte depended-on component [DoC]), sollten in Unit Tests vermieden werden. Somit bleiben die Unit Tests schnell und testen die effektive Logik des Programms. Test Doubles (fakes/spies/mocks/...) werden anstatt der DoCs eingeführt, um Abhängigkeiten zu externen Komponenten zu vermeiden. Im Szenario oben entspricht der BankAccount A und B solch einem externen DoC-System.
+Komponenten, welche von externen, langsamen oder nicht immer verfügbare Ressourcen (Netzwerk, Datenbanken, usw.) abhängen (so genannte depended-on component [DoC]), sollten in Unit Tests vermieden werden. Somit bleiben die Unit Tests schnell und testen die effektive Logik des Programms. Test Doubles (fakes/spies/mocks/...) werden anstatt der DoCs eingeführt, um Abhängigkeiten zu externen Komponenten zu vermeiden. Im Szenario oben entspricht der BankAccount A und B solch einem externen DoC-System.
+
+**Tip:** Lesen Sie zuerst die ganze Aufgabe durch, folgen Sie anschliessend den Schritten 1-7.
 
 1. Schreiben Sie die Test-Spezifikationen (Jasmine Tests) fürs Szenario ```A new transaction of 25$ (account A 100$ / account B 25$)```. Sie finden die Vorlagen im Ordner `dependencies\1-initial`.
 	* Um Werte/Referenzen zu überprüfen, verwenden Sie ```toBe()```; ```toEqual()``` vergleicht zusätzlich die Inhalte von Objekten und Arrays (Properties/Indexes).
 	* Um native APIs, welche immer andere Resultate liefern, testbar zu machen, kann die Jasmine-Funktion ```spyOn(Date, 'now')``` und ```andReturn()``` / ```andCallFake()``` verwendet werden. Mehr Informationen zu diesen Funktionen finden Sie unter http://evanhahn.com/how-do-i-jasmine/.
-	* Legen Sie eine Fake-Klasse für das DoC ```BankAccount``` an. Verwengeben Sie dieselbe API (withdraw/deposit) wie in den Basics-Aufgaben.
+	* Legen Sie eine Fake-Klasse für das DoC ```BankAccount``` an. Verwenden Sie dieselbe API (withdraw/deposit) wie in den Basics-Aufgaben.
 	* Die Lösungen zur Aufgabe 1 finden Sie unter ```2-spec/transaction.spec.js```.
 2. Führen Sie die Tests mittels Jasmine aus (analog Bascis-Aufgabe), zum Beispiel:
 	```shell
 	npm run jasmine --verbose 2-spec/transaction.spec.js
 	```
-3. Implementieren Sie nun die Initilisierung/Konstruktorlogik der Transaction-Klasse gemäss der Scenario-Vorgaben oben.
+3. Implementieren Sie nun die Initialisierung/Konstruktorlogik der Transaction-Klasse gemäss der Scenario-Vorgaben oben.
 4. Nun sollten die Tests aus der Aufgabe 1 ohne Fehler durchlaufen.
 5. Schreiben Sie nun den ersten Test für das zeite (verschachtelte) Szenario ```when executed```.
 	* Der Test muss nun fehlschlagen.
-	* Implementieren Sie nun die ```withdraw()```-Funktion der Transaction-Klasse:
-		* Im die ```withdraw()``` der Funktion der ```BankAccountFake```-Klasse zu überschreiben, können Sie ebenfalls die Jasmine-Funktion ```spyOn()``` verwenden.
+	* Implementieren Sie nun die ```complete()```-Funktion der Transaction-Klasse:
+		* Um die ```withdraw()``` der Funktion der ```BankAccountFake```-Klasse zu überschreiben, können Sie ebenfalls die Jasmine-Funktion ```spyOn()``` verwenden.
 	* Nun sollte der Test ohne Fehler durchlaufen.
 6. Implementieren Sie nun die weiteren Anforderungen des Szenarios ```when executed``` analog der Vorgehensweise unter Punkt 5. 
 7. Vergleichen Sie das Vorgehen von Punkt 1 mit Punkt 5: Warum macht es keinen Sinn, zuerst sämtliche Test-Spezifikationen und erst anschliessend die gesamte Transaction-Logik zu implementieren?
