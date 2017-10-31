@@ -26,6 +26,8 @@
 
 ## Exercise / Jasmine installieren und ausführen
 
+**Tip:** Lesen Sie zuerst die ganze Aufgabe durch, folgen Sie anschliessend den Schritten 1-11.
+
 1. Laden/Clonen Sie die den Code von [github.com/IFS-Web/HSR.CAS-FEE.Testing](https://github.com/IFS-Web/HSR.CAS-FEE.Testing) auf Ihre lokale Harddisk.
 2. Wechseln Sie ins HSR.CAS-FEE.Testing Directory und installieren Sie das npm-Paket mittels `npm install`.
 3. Sie finden zusätzliche Informationen über Jasmine unter:
