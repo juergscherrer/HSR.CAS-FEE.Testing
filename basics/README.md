@@ -3,7 +3,18 @@
 [github.com/IFS-Web/HSR.CAS-FEE.Testing/tree/master/basics](https://github.com/IFS-Web/HSR.CAS-FEE.Testing/tree/master/basics)
 
 
-## Banc account user stories
+## Ordnerstruktur
+
+* *0-demos* Enthält die DEMO-Beschreibung zur individuellen 
+* *1-initial* Samples für die DEMO im Initialzustand.
+* *2-refactoring* Samples für die DEMO nach dem Refactoring.
+* *3-spec* Vorlagen für die Übung (Beschreibung siehe unten).
+* *4-solution* Lösungen der Übung.
+
+
+## Anforderungen
+
+### Banc account user stories
 
 * **As a** `bank agent` **I want to** `create accounts` **so that** customers `can deposit and withdraw amounts`.
 * **As a** `bank customer` **I want to** `deposit amounts` **so that** I can `store my money`.
@@ -11,9 +22,9 @@
 * **As a** `bank` **I want to** `prevent customers from overdrawing` their account **so that** I can `lower my risk`.
 
 
-## Banc account test scenarios (Jasmine)
+### Banc account test scenarios (Jasmine)
 
-### Scenario *New account*
+#### Scenario *New account*
 **describe**… "A new bank account"
 * it … "is initialized by a balance of 0$"
 * it … "should not allow a withdraw without balance"
@@ -39,8 +50,8 @@
 	npm run jasmine --verbose basics/3-spec/bank-account.spec.js
 	```
 
-6. Die Tests sollten nun fehlschlagen (das Return-Statement ist noch fehlerhaft)!
-7. Beheben Sie das Problem mit dem fehlerhaften Return-Statement.
+6. Die Tests sollten nun fehlschlagen (was wurde beim Refactoring kaputt gemacht?).
+7. Beheben Sie das Problem mit dem fehlerhaften Statement.
 8. Die Tests sollten nun grün durchlaufen!
 9. Wie wird dieser "development cycle" genannt?
 

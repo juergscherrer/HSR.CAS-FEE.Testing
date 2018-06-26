@@ -1,6 +1,10 @@
 # HSR.CAS-FEE.Testing
 Lern how to test your applications with Jasmine.
 
+### Demos
+
+* [Examples and Demos](./demos/README.md)
+
 ## Chapters
 
 ### 1 Jasmine Basics
