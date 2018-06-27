@@ -66,13 +66,13 @@
 		it … "should return true when withdraw succeeded"
 ```
 10. Fügen Sie im ```bank-account.js``` die entsprechende Logik dazu.
-11. Wie wird dieses Vorgehen (Schritte 9-11)  genannt?
+11. Wie wird dieses Vorgehen (Schritte 9-10)  genannt?
 
 
 ## Solution
 
 * Test-Spezifikationen: [3-spec/bank-account.spec.js](./3-spec/bank-account.spec.js)
-* Banc account Logik: [4-solution/bank-account.js](./4-solution/bank-account.js)
+* `Banc account` Logik: [4-solution/bank-account.js](./4-solution/bank-account.js)
 
 ### process.env.bankaccount
 

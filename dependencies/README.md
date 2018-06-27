@@ -63,5 +63,5 @@ Komponenten, welche von externen, langsamen oder nicht immer verfügbare Ressour
 ## Solution
 
 * Test-Spezifikationen: [4-spec-completion/transaction.spec.js](./4-spec-completion/transaction.spec.js)
-* Transaction-Klasse: [5-solution/transaction.js](./5-solution/transaction.js)
+* `Transaction`-Klasse: [5-solution/transaction.js](./5-solution/transaction.js)
 * Frage 7: Siehe [5-solution/transaction.spec.js](./5-solution/transaction.spec.js)
