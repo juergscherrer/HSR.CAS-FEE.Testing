@@ -37,7 +37,7 @@ Komponenten, welche von externen, langsamen oder nicht immer verfügbare Ressour
 	* Die Lösungen zur Aufgabe 1 finden Sie unter ```2-spec/transaction.spec.js```.
 2. Führen Sie die Tests mittels Jasmine aus (analog Bascis-Aufgabe), zum Beispiel:
 	```shell
-	npm run jasmine --verbose 2-spec/transaction.spec.js
+	npm run jasmine dependencies/2-spec
 	```
 3. Implementieren Sie nun die Initialisierung/Konstruktorlogik der Transaction-Klasse gemäss der Scenario-Vorgaben oben.
 4. Nun sollten die Tests aus der Aufgabe 1 ohne Fehler durchlaufen.

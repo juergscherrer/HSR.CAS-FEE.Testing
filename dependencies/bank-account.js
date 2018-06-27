@@ -1,6 +1,5 @@
 'use strict';
 
-
 module.exports = class BankAccount {
 	constructor() {
 		this.maximalWithdrawFactor = 0.25;

@@ -1,4 +1,9 @@
+//-start---------------- CAS FEE Test Infrastructure ------------------------\\
+/**
+ * Load configured / local SUT.
+ */
 const BankAccount = require(process.env.bankaccount || "./bank-account");
+//-end------------------ CAS FEE Test Infrastructure ------------------------\\
 
 
 // new bank account test suite

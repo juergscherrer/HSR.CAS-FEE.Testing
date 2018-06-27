@@ -1,10 +1,15 @@
+//-start---------------- CAS FEE Test Infrastructure ------------------------\\
+/**
+ * Load configured / local SUT.
+ */
 const Transaction = require(process.env.transaction || "./transaction");
+//-end------------------ CAS FEE Test Infrastructure ------------------------\\
 
 
 describe("A new transaction of 25$", function() {
 	beforeEach(function() {
 		// Methodstub for Date.now()
-		spyOn(Date, 'now').andReturn(new Date("2016-11-22T09:49:51.010Z"));
+		spyOn(Date, 'now').and.returnValue(new Date("2016-11-22T09:49:51.010Z"));
 
 		// Banc account fake
 		const BankAccountFake = class {

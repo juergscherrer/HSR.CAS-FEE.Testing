@@ -2,14 +2,11 @@
 
 [github.com/IFS-Web/HSR.CAS-FEE.Testing/tree/master/basics](https://github.com/IFS-Web/HSR.CAS-FEE.Testing/tree/master/basics)
 
-
-## Ordnerstruktur
-
-* *0-demos* Enthält die DEMO-Beschreibung zur individuellen 
-* *1-initial* Samples für die DEMO im Initialzustand.
-* *2-refactoring* Samples für die DEMO nach dem Refactoring.
-* *3-spec* Vorlagen für die Übung (Beschreibung siehe unten).
-* *4-solution* Lösungen der Übung.
+* [0-demos](./0-demos/) Enthält die Notizen zur DEMO.
+* [1-initial](./1-initial/) Samples für die DEMO im Initialzustand.
+* [2-refactoring](./2-refactoring/) Samples für die DEMO nach dem Refactoring.
+* [3-spec](./3-spec/) Vorlagen für die Übung (Beschreibung siehe unten).
+* [4-solution](./4-solution/) Lösungen der Übung.
 
 
 ## Anforderungen
@@ -47,20 +44,27 @@
 4. Öffnen Sie das `basics/3-spec/bank-account.spec.js` File und vergleichen Sie die Test-Spezifikation mit der Implementation im bank-account.js File.
 5. Führen Sie Jasmine aus:
 	```shell
-	npm run jasmine --verbose basics/3-spec/bank-account.spec.js
+	npm run jasmine basics/3-spec
 	```
+	* Alternativ können Sie das [Jasmine WebStorm Plugin](https://plugins.jetbrains.com/plugin/10449-jasmine) verwenden. Eine vollständige Anleitung finden Sie unter [jetbrains.com/help](https://www.jetbrains.com/help/webstorm/installing-updating-and-uninstalling-repository-plugins.html).
+	* Weiterhin enthält das package.json diverse vordefinierte run-script Kommandos:
+	    * ```npm run test-basics``` Führt sämtliche Unit Tests im Ordner basics aus.
+	    * ```npm run test-basics-solution``` Führt sämtliche Unit Tests im Ordner basics aus.
+	    * ```npm run test-deps``` Führt sämtliche Unit Tests im Ordner dependencies aus.
+	    * ```npm run test-deps-solution``` Führt sämtliche Unit Tests im Ordner dependencies aus.
 
 6. Die Tests sollten nun fehlschlagen (was wurde beim Refactoring kaputt gemacht?).
 7. Beheben Sie das Problem mit dem fehlerhaften Statement.
 8. Die Tests sollten nun grün durchlaufen!
-9. Wie wird dieser "development cycle" genannt?
 
-	**Falls noch Zeit übrig bleibt:**
-10. Erweitern Sie die Tests um den folgenden Testfall:
-
-	**describe**… "A bank account of with balance of 100$"
-	* it … "should return true when withdraw succeeded"
-11. Fügen Sie im ```bank-account.spec.js``` den entsprechenden Code dazu.
+	**Weiterführende Übungen:**
+9. Erweitern Sie die Tests (```bank-account.spec.js```) um den folgenden Testfall:
+```javascript
+	describe "A bank account of with balance of 100$"
+		it … "should return true when withdraw succeeded"
+```
+10. Fügen Sie im ```bank-account.js``` die entsprechende Logik dazu.
+11. Wie wird dieser "development cycle" genannt?
 
 
 ## Solution
@@ -70,7 +74,7 @@
 
 ### process.env.bankaccount
 
-Die Vorlagen enthalten in den Import-Anweisungen ```process.env.bankaccount``` Statements. Diese sind für die Lösungen gedacht, damit die Sourcen nicht in sämtliche Folders kopiert werden müssen.
+Die Vorlagen enthalten in den Import-Anweisungen ```process.env.bankaccount``` Statements. Diese sind für die Lösungen gedacht, damit die Specs-Sourcen nicht in sämtliche Folders kopiert werden müssen.
 
 ```javascript
 const BankAccount = require(process.env.bankaccount || "./bank-account");

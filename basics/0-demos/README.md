@@ -1,24 +1,71 @@
-# HSR.CAS-FEE.Testing
-Lern how to test your applications with Jasmine.
-
-### Demos
-
-* [Examples and Demos](./demos/README.md)
-
-## Chapters
-
-### 1 Jasmine Basics
-
-* [Test First exercise](./basics/README.md)
-
-### 2 Testing & Dependencies
-
-* [Test doubles exercise](./dependencies/README.md)
+# What happens without testing?
 
 
-## License
+## A short Story first
 
-| Document | License |
-| --- | --- |
-| Exercises | <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.ifs.hsr.ch" property="cc:attributionName" rel="cc:attributionURL"> IFS, HSR Hochschule für Technik, Rapperswil</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. |
-| Code examples | The code examples are licensed under [The MIT License (MIT)](https://opensource.org/licenses/MIT). |
+1. BankAccount implementation see [bank-account.js](../1-initial/bank-account.js)
+2. BankAccount usagesee [main.js](../1-initial/main.js) or:
+	```javascript
+	// .../CAS-FEE/HSR.CAS-FEE.Testing/basics $
+	var BankAccount = require("./1-initial/bank-account");
+	// undefined
+
+	var account = new BankAccount();
+	// create account
+	// undefined
+
+	account.balance
+	// 0
+
+	account.deposit(50);
+	// Deposit 50. Balance 50.
+	// true
+
+	account.withdraw(50);
+	// Withdraw of 50 failed.
+	// false
+
+	account.withdraw(10);
+	// Withdraw 10. Balance 40.
+	// true
+	```
+
+3. Refactoring of the return statement (make it more readable) -> [bank-account.js](./2-refactoring/bank-account.js):
+	```javascript
+	hasTooLessCredit(amount) {
+		return
+			this.balance < Math.abs(amount) ||
+			amount > this.balance * this.maximalWithdrawFactor;
+	}
+	```
+
+4. Reactoring broke the functionality -> [main.js](./2-refactoring/main.js) or:
+	```javascript
+	// .../CAS-FEE/HSR.CAS-FEE.Testing/basics $
+	var BankAccount = require("./2-refactoring/bank-account");
+	// undefined
+
+	var account = new BankAccount();
+	// create account
+	// undefined
+
+	account.balance
+	// 0
+
+	account.deposit(50);
+	// Deposit 50. Balance 50.
+	// true
+
+	account.withdraw(20);
+	// Withdraw 50. Balance -20.
+	// true
+	```
+
+	The compiler will insert a semicolon after `return <-'` (See `empty statement` and `semicolon insertion` in JavaScript).
+
+
+## How to do it better?
+
+Test Driven Design: Write **tests/specs** first, then implement the functionality.
+
+-> [TDD exercise](./Exercise-Jasmine.md)

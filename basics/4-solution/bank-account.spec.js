@@ -1,12 +1,23 @@
+//-start---------------- CAS FEE Test Infrastructure ------------------------\\
+/**
+ *  - Set local transaction.js file as SUT.
+ *  - All specs from folders
+ *    * 3-spec
+ *    will run test with local transaction.js file.
+ */
 process.env.bankaccount = "../4-solution/bank-account";
 
+/**
+ * Load previously defined spec files.
+ */
 const Spec = require("../3-spec/bank-account.spec");
+//-end------------------ CAS FEE Test Infrastructure ------------------------\\
 
 
 const BankAccount = require("./bank-account");
 
 /**
- * TDD - Test driven development
+ * Test First Development
  * 1. Write spec
  * 2. Run tests -> tests fail
  * 3. Implement feature & run tests again until they pass
