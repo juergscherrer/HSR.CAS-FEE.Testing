@@ -51,7 +51,7 @@ Komponenten, welche von externen, langsamen oder nicht immer verfügbare Ressour
 	```
 3. Implementieren Sie nun die Initialisierung/Konstruktorlogik der Transaction-Klasse gemäss der Scenario-Vorgaben oben.
 4. Nun sollten die Tests aus der Aufgabe 1 ohne Fehler durchlaufen.
-5. Schreiben Sie nun den ersten Test für das zeite (verschachtelte) Szenario ```when executed```.
+5. Schreiben Sie nun den ersten Test für das zweite (verschachtelte) Szenario ```when executed```.
 	* Der Test muss nun fehlschlagen.
 	* Implementieren Sie nun die ```execute()```-Funktion der Transaction-Klasse:
 		* Um die ```withdraw()``` der Funktion der ```BankAccountFake```-Klasse zu überschreiben, können Sie ebenfalls die Jasmine-Funktion [spyOn()](https://jasmine.github.io/api/edge/Spy.html) verwenden.

@@ -14,7 +14,7 @@
 
 ## Anforderungen
 
-### Banc account user stories
+### Bank account user stories
 
 * **As a** `bank agent` **I want to** `create accounts` **so that** customers `can deposit and withdraw amounts`.
 * **As a** `bank customer` **I want to** `deposit amounts` **so that** I can `store my money`.
@@ -22,7 +22,7 @@
 * **As a** `bank` **I want to** `prevent customers from overdrawing` their account **so that** I can `lower my risk`.
 
 
-### Banc account test scenarios
+### Bank account test scenarios
 
 #### Scenario *New account*
 **describe**… "A new bank account"
@@ -72,7 +72,7 @@
 ## Solution
 
 * Test-Spezifikationen: [3-spec/bank-account.spec.js](./3-spec/bank-account.spec.js)
-* `Banc account` Logik: [4-solution/bank-account.js](./4-solution/bank-account.js)
+* `Bank account` Logik: [4-solution/bank-account.js](./4-solution/bank-account.js)
 
 ### process.env.bankaccount
 
