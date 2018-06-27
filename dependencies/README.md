@@ -5,9 +5,9 @@
 ## Overview
 
 * [1-initial](./1-initial/) Vorlagen für die Übung (Beschreibung siehe unten).
-* [2-spec](./2-spec/) Implementation der Unit Tests (schlagen fehl).
+* [2-spec](./2-spec/) Anlegen der Unit Tests (Tests schlagen fehl).
 * [3-implementation](./3-implementation/) Transaktionsklasse für Schritte 1-3 implementiert.
-* [4-spec-completion](./4-spec-completion/) Unit Test komplett implementiert  (schlagen fehl).
+* [4-spec-completion](./4-spec-completion/) Unit Tests komplett angelegt (Tests schlagen fehl).
 * [5-solution](./5-solution/) Transaktionsklasse komplett implementiert und mit Unit Test getestet.
 
 
@@ -42,7 +42,7 @@ Komponenten, welche von externen, langsamen oder nicht immer verfügbare Ressour
 
 1. Schreiben Sie die Test-Spezifikationen (Jasmine Tests) fürs Szenario ```A new transaction of 25$ (account A 100$ / account B 25$)```. Sie finden die Vorlagen im Ordner `dependencies\1-initial`.
 	* Um Werte/Referenzen zu überprüfen, verwenden Sie ```toBe()```; ```toEqual()``` vergleicht zusätzlich die Inhalte von Objekten und Arrays (Properties/Indexes).
-	* Um native APIs, welche immer andere Resultate liefern, testbar zu machen, kann die Jasmine-Funktion ```spyOn(Date, 'now')``` und ```andReturn()``` / ```andCallFake()``` verwendet werden. Mehr Informationen zu diesen Funktionen finden Sie unter http://evanhahn.com/how-do-i-jasmine/.
+	* Um native APIs, welche immer andere Resultate liefern, testbar zu machen, kann die Jasmine-Funktion ```spyOn(Date, 'now')``` und ```and.returnValue()``` / ```and.callFake()``` verwendet werden. Mehr Informationen zu diesen Funktionen finden Sie unter [jasmine.github.io](https://jasmine.github.io/2.0/introduction#section-Spies).
 	* Legen Sie eine Fake-Klasse für das DoC ```BankAccount``` an. Verwenden Sie dieselbe API (withdraw/deposit) wie in den Basics-Aufgaben.
 	* Die Lösungen zur Aufgabe 1 finden Sie unter ```2-spec/transaction.spec.js```.
 2. Führen Sie die Tests mittels Jasmine aus (analog [bascis](../basics/README.md#exercise--jasmine-installieren-und-ausführen)-Aufgabe), zum Beispiel:

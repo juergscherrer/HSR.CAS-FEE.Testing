@@ -7,7 +7,7 @@
 
 * [0-demos](./0-demos/) Enthält die Notizen zur DEMO.
 * [1-initial](./1-initial/) Samples für die DEMO im Initialzustand.
-* [2-refactoring](./2-refactoring/) Samples für die DEMO nach dem Refactoring.
+* [2-refactoring](./2-refactoring/) Samples für die DEMO nach dem Refactoring (Tests schlagen fehl).
 * [3-spec](./3-spec/) Vorlagen für die Übung (Beschreibung siehe unten).
 * [4-solution](./4-solution/) Lösungen der Übung.
 
@@ -45,7 +45,7 @@
 	* http://evanhahn.com/how-do-i-jasmine/ (`SpecRunner` Abschnitt ignorieren)
 	* https://jasmine.github.io/edge/introduction.html
 4. Öffnen Sie das `basics/3-spec/bank-account.spec.js` File und vergleichen Sie die Test-Spezifikation mit der Implementation im bank-account.js File.
-5. Führen Sie Jasmine aus:
+5. Führen Sie Jasmine mittels ```npm run jasmine [Specs-Ordner]``` aus:
 	```shell
 	npm run jasmine basics/3-spec
 	```
