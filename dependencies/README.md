@@ -7,8 +7,8 @@
 * [1-initial](./1-initial/) Vorlagen für die Übung (Beschreibung siehe unten).
 * [2-spec](./2-spec/) Implementation der Unit Tests (schlagen fehl).
 * [3-implementation](./3-implementation/) Transaktionsklasse für Schritte 1-3 implementiert.
-* [4-spec-completion](./4-spec-completion/) Unit Test komplett implementiert.
-* [5-solution](./5-solution/) Transaktionsklasse komplett implementiert.
+* [4-spec-completion](./4-spec-completion/) Unit Test komplett implementiert  (schlagen fehl).
+* [5-solution](./5-solution/) Transaktionsklasse komplett implementiert und mit Unit Test getestet.
 
 
 ## Erweiterte Anforderungen
@@ -45,7 +45,7 @@ Komponenten, welche von externen, langsamen oder nicht immer verfügbare Ressour
 	* Um native APIs, welche immer andere Resultate liefern, testbar zu machen, kann die Jasmine-Funktion ```spyOn(Date, 'now')``` und ```andReturn()``` / ```andCallFake()``` verwendet werden. Mehr Informationen zu diesen Funktionen finden Sie unter http://evanhahn.com/how-do-i-jasmine/.
 	* Legen Sie eine Fake-Klasse für das DoC ```BankAccount``` an. Verwenden Sie dieselbe API (withdraw/deposit) wie in den Basics-Aufgaben.
 	* Die Lösungen zur Aufgabe 1 finden Sie unter ```2-spec/transaction.spec.js```.
-2. Führen Sie die Tests mittels Jasmine aus (analog Bascis-Aufgabe), zum Beispiel:
+2. Führen Sie die Tests mittels Jasmine aus (analog [bascis](../basics/README.md#exercise--jasmine-installieren-und-ausführen)-Aufgabe), zum Beispiel:
 	```shell
 	npm run jasmine dependencies/2-spec
 	```
