@@ -2,17 +2,27 @@
 
 [github.com/IFS-Web/HSR.CAS-FEE.Testing/tree/master/dependencies](https://github.com/IFS-Web/HSR.CAS-FEE.Testing/tree/master/dependencies)
 
+## Overview
 
-## Transaction user stories
+* [1-initial](./1-initial/) Vorlagen für die Übung (Beschreibung siehe unten).
+* [2-spec](./2-spec/) Implementation der Unit Tests (schlagen fehl).
+* [3-implementation](./3-implementation/) Transaktionsklasse für Schritte 1-3 implementiert.
+* [4-spec-completion](./4-spec-completion/) Unit Test komplett implementiert.
+* [5-solution](./5-solution/) Transaktionsklasse komplett implementiert.
+
+
+## Erweiterte Anforderungen
+
+### Transaction user stories
 
 * **As a** `bank customer` **I want to** `send amounts` to other accounts **so that** I can `pay someone`.
 * **As a** `bank customer` **I want to** `receive amounts` from other accounts **so that** someone can `pay me`.
 * **As a** `bank` **I want to** `see time and date of every transaction` **so that** I have an `overview about the transaction history`.
 
 
-## Transaction test scenarios (Jasmine)
+### Transaction test scenarios
 
-### Scenario *New transaction*
+#### Scenario *New transaction*
 **describe**… "A new transaction of 25$ (account A 100$ / account B 25$)"
 * it … "has transaction date 2016-11-22T09:49:51.010Z"
 * it … "has an amount of 25$"
@@ -44,7 +54,7 @@ Komponenten, welche von externen, langsamen oder nicht immer verfügbare Ressour
 5. Schreiben Sie nun den ersten Test für das zeite (verschachtelte) Szenario ```when executed```.
 	* Der Test muss nun fehlschlagen.
 	* Implementieren Sie nun die ```execute()```-Funktion der Transaction-Klasse:
-		* Um die ```withdraw()``` der Funktion der ```BankAccountFake```-Klasse zu überschreiben, können Sie ebenfalls die Jasmine-Funktion ```spyOn()``` verwenden.
+		* Um die ```withdraw()``` der Funktion der ```BankAccountFake```-Klasse zu überschreiben, können Sie ebenfalls die Jasmine-Funktion [spyOn()](https://jasmine.github.io/2.0/introduction#section-Spies) verwenden.
 	* Nun sollte der Test ohne Fehler durchlaufen.
 6. Implementieren Sie nun die weiteren Anforderungen des Szenarios ```when executed``` analog der Vorgehensweise unter Punkt 5. 
 7. Vergleichen Sie das Vorgehen von Punkt 1 mit Punkt 5: Warum macht es keinen Sinn, zuerst sämtliche Test-Spezifikationen und erst anschliessend die gesamte Transaction-Logik zu implementieren?
@@ -54,4 +64,4 @@ Komponenten, welche von externen, langsamen oder nicht immer verfügbare Ressour
 
 * Test-Spezifikationen: [4-spec-completion/transaction.spec.js](./4-spec-completion/transaction.spec.js)
 * Transaction-Klasse: [5-solution/transaction.js](./5-solution/transaction.js)
-* Frage 7: [5-solution/transaction.spec.js](./5-solution/transaction.spec.js)
+* Frage 7: Siehe [5-solution/transaction.spec.js](./5-solution/transaction.spec.js)

@@ -2,6 +2,9 @@
 
 [github.com/IFS-Web/HSR.CAS-FEE.Testing/tree/master/basics](https://github.com/IFS-Web/HSR.CAS-FEE.Testing/tree/master/basics)
 
+
+## Overview
+
 * [0-demos](./0-demos/) Enthält die Notizen zur DEMO.
 * [1-initial](./1-initial/) Samples für die DEMO im Initialzustand.
 * [2-refactoring](./2-refactoring/) Samples für die DEMO nach dem Refactoring.
@@ -19,7 +22,7 @@
 * **As a** `bank` **I want to** `prevent customers from overdrawing` their account **so that** I can `lower my risk`.
 
 
-### Banc account test scenarios (Jasmine)
+### Banc account test scenarios
 
 #### Scenario *New account*
 **describe**… "A new bank account"
@@ -46,7 +49,7 @@
 	```shell
 	npm run jasmine basics/3-spec
 	```
-	* Alternativ können Sie das [Jasmine WebStorm Plugin](https://plugins.jetbrains.com/plugin/10449-jasmine) verwenden. Eine vollständige Anleitung finden Sie unter [jetbrains.com/help](https://www.jetbrains.com/help/webstorm/installing-updating-and-uninstalling-repository-plugins.html).
+	* Alternativ können Sie das [Jasmine WebStorm Plugin](https://plugins.jetbrains.com/plugin/10449-jasmine) verwenden. Eine vollständige Installationsanleitung finden Sie unter [jetbrains.com/help](https://www.jetbrains.com/help/webstorm/installing-updating-and-uninstalling-repository-plugins.html).
 	* Weiterhin enthält das package.json diverse vordefinierte run-script Kommandos:
 	    * ```npm run test-basics``` Führt sämtliche Unit Tests im Ordner basics aus.
 	    * ```npm run test-basics-solution``` Führt sämtliche Unit Tests im Ordner basics aus.
@@ -64,7 +67,7 @@
 		it … "should return true when withdraw succeeded"
 ```
 10. Fügen Sie im ```bank-account.js``` die entsprechende Logik dazu.
-11. Wie wird dieser "development cycle" genannt?
+11. Wie wird dieses Vorgehen (Schritte 9-11)  genannt?
 
 
 ## Solution

@@ -4,7 +4,7 @@
 ## A short Story first
 
 1. BankAccount implementation see [bank-account.js](../1-initial/bank-account.js)
-2. BankAccount usagesee [main.js](../1-initial/main.js) or:
+2. BankAccount usage see [main.js](../1-initial/main.js) or:
 	```javascript
 	// .../CAS-FEE/HSR.CAS-FEE.Testing/basics $
 	var BankAccount = require("./1-initial/bank-account");
@@ -68,4 +68,4 @@
 
 Test Driven Design: Write **tests/specs** first, then implement the functionality.
 
--> [TDD exercise](./Exercise-Jasmine.md)
+-> [Test First exercise](../)
