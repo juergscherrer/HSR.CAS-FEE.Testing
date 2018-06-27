@@ -42,8 +42,7 @@
 1. Laden/Clonen Sie die den Code von [github.com/IFS-Web/HSR.CAS-FEE.Testing](https://github.com/IFS-Web/HSR.CAS-FEE.Testing) auf Ihre lokale Harddisk.
 2. Wechseln Sie ins HSR.CAS-FEE.Testing Directory und installieren Sie das npm-Paket mittels `npm install`.
 3. Sie finden zusätzliche Informationen über Jasmine unter:
-	* http://evanhahn.com/how-do-i-jasmine/ (`SpecRunner` Abschnitt ignorieren)
-	* https://jasmine.github.io/edge/introduction.html
+	* https://jasmine.github.io/tutorials/your_first_suite
 4. Öffnen Sie das `basics/3-spec/bank-account.spec.js` File und vergleichen Sie die Test-Spezifikation mit der Implementation im bank-account.js File.
 5. Führen Sie Jasmine mittels ```npm run jasmine [Specs-Ordner]``` aus:
 	```shell

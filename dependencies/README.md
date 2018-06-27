@@ -42,7 +42,7 @@ Komponenten, welche von externen, langsamen oder nicht immer verfügbare Ressour
 
 1. Schreiben Sie die Test-Spezifikationen (Jasmine Tests) fürs Szenario ```A new transaction of 25$ (account A 100$ / account B 25$)```. Sie finden die Vorlagen im Ordner `dependencies\1-initial`.
 	* Um Werte/Referenzen zu überprüfen, verwenden Sie ```toBe()```; ```toEqual()``` vergleicht zusätzlich die Inhalte von Objekten und Arrays (Properties/Indexes).
-	* Um native APIs, welche immer andere Resultate liefern, testbar zu machen, kann die Jasmine-Funktion ```spyOn(Date, 'now')``` und ```and.returnValue()``` / ```and.callFake()``` verwendet werden. Mehr Informationen zu diesen Funktionen finden Sie unter [jasmine.github.io](https://jasmine.github.io/2.0/introduction#section-Spies).
+	* Um native APIs, welche immer andere Resultate liefern, testbar zu machen, kann die Jasmine-Funktion ```spyOn(Date, 'now')``` und ```and.returnValue()``` / ```and.callFake()``` verwendet werden. Mehr Informationen zu diesen Funktionen finden Sie unter [jasmine.github.io](https://jasmine.github.io/api/edge/Spy.html).
 	* Legen Sie eine Fake-Klasse für das DoC ```BankAccount``` an. Verwenden Sie dieselbe API (withdraw/deposit) wie in den Basics-Aufgaben.
 	* Die Lösungen zur Aufgabe 1 finden Sie unter ```2-spec/transaction.spec.js```.
 2. Führen Sie die Tests mittels Jasmine aus (analog [bascis](../basics/README.md#exercise--jasmine-installieren-und-ausführen)-Aufgabe), zum Beispiel:
@@ -54,7 +54,7 @@ Komponenten, welche von externen, langsamen oder nicht immer verfügbare Ressour
 5. Schreiben Sie nun den ersten Test für das zeite (verschachtelte) Szenario ```when executed```.
 	* Der Test muss nun fehlschlagen.
 	* Implementieren Sie nun die ```execute()```-Funktion der Transaction-Klasse:
-		* Um die ```withdraw()``` der Funktion der ```BankAccountFake```-Klasse zu überschreiben, können Sie ebenfalls die Jasmine-Funktion [spyOn()](https://jasmine.github.io/2.0/introduction#section-Spies) verwenden.
+		* Um die ```withdraw()``` der Funktion der ```BankAccountFake```-Klasse zu überschreiben, können Sie ebenfalls die Jasmine-Funktion [spyOn()](https://jasmine.github.io/api/edge/Spy.html) verwenden.
 	* Nun sollte der Test ohne Fehler durchlaufen.
 6. Implementieren Sie nun die weiteren Anforderungen des Szenarios ```when executed``` analog der Vorgehensweise unter Punkt 5. 
 7. Vergleichen Sie das Vorgehen von Punkt 1 mit Punkt 5: Warum macht es keinen Sinn, zuerst sämtliche Test-Spezifikationen und erst anschliessend die gesamte Transaction-Logik zu implementieren?
