@@ -5,7 +5,6 @@
 const BankAccount = require(process.env.bankaccount || "./bank-account");
 //-end------------------ CAS FEE Test Infrastructure ------------------------\\
 
-
 // new bank account test suite
 describe("A new bank account", function() {
 	beforeEach(function() {
@@ -24,7 +23,7 @@ describe("A new bank account", function() {
 	it("should have a balance of 50$ after a deposit of 50$", function() {
 		this.account.deposit(50);
 		expect(this.account.balance).toBe(50);
-	});
+	});®
 	
 });
 
